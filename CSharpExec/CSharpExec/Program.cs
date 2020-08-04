@@ -17,7 +17,7 @@ namespace CSharpExec
             String UNC = "";
             if(Arguments["Share"] == null || Arguments["Share"] == "")
             {
-                UNC = String.Format("\\\\{0}\\ADMIN$", Arguments["Host"], Arguments["Share"]);
+                UNC = String.Format("\\\\{0}\\ADMIN$", Arguments["Host"]);
             }
             else
             {
